@@ -3,7 +3,7 @@ import { loadStripe } from "@stripe/stripe-js";
 
 const Payment = () => {
   const handleCheckout = async () => {
-    const response = await fetch("http://localhost:8080/api/payment/checkout-session?successUrl=http://localhost:3000/success&cancelUrl=http://localhost:3000/cancel", {
+    const response = await fetch("https://stripe-integration-backend.onrender.com/api/payment/checkout-session?successUrl=https://klimbachiya.github.io/stripe-integration-frontend&cancelUrl=https://klimbachiya.github.io/stripe-integration-frontend", {
       method: "POST",
     });
 
